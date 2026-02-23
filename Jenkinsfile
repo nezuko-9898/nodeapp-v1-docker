@@ -16,13 +16,13 @@ pipeline {
             }
         }
 
-        stage('Run New Container') {
+        stage('Run New Container with Volume') {
             steps {
                 sh '''
                 docker run -d \
                 --name nodeapp-v1 \
                 -p 3000:3000 \
-                -v nodeapp-data:/app/data
+                -v nodeapp-data:/app/data \
                 nodeapp-v1
                 '''
             }
