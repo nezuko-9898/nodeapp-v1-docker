@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req,res)=>{
-  res.send("🚀 Node App Running inside Docker + Jenkins")
+  res.send("🚀 Node App Running inside MR Docker + MR Jenkins")
 })
 
 app.listen(3000, ()=>{
