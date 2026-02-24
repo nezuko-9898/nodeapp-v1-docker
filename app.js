@@ -5,6 +5,6 @@ app.get('/', (req,res)=>{
   res.send("🚀 Node App Running inside MR Hello Docker + MR Hello Jenkins")
 })
 
-app.listen(3000, ()=>{
+app.listen(4000, ()=>{
   console.log("Server running on port 3000")
 })
