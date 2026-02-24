@@ -27,5 +27,16 @@ pipeline {
                 '''
             }
         }
+
+        stage('Docker Cleanup') {
+            steps {
+                sh '''
+                echo "Cleaning dangling images..."
+                docker image prune -f
+
+               
+                '''
+            }
+        }
     }
 }
