@@ -21,7 +21,7 @@ pipeline {
                 sh '''
                 docker run -d \
                 --name nodeapp-v1 \
-                -p 3000:4000 \
+                -p 4000:4000 \
                 -v nodeapp-data:/app/data \
                 nodeapp-v1
                 '''
